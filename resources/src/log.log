@@ -1,0 +1,21 @@
+[2024-02-23 20:46:46.421] [info]  Test
+[2024-02-23 20:46:47.017] [info]  Server started on port:1337
+[2024-02-23 20:46:47.385] [info]  Client Connected to server
+[2024-02-23 20:46:58.883] [error] Error: 401 Incorrect API key provided: sk-qspMp***************************************HvhB. You can find your API key at https://platform.openai.com/account/api-keys.
+    at APIError.generate (C:\Users\Geekster PC\Downloads\LakLaka\resources\node_modules\openai\error.js:47:20)
+    at OpenAI.makeStatusError (C:\Users\Geekster PC\Downloads\LakLaka\resources\node_modules\openai\core.js:262:33)
+    at OpenAI.makeRequest (C:\Users\Geekster PC\Downloads\LakLaka\resources\node_modules\openai\core.js:305:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Socket.<anonymous> (C:\Users\Geekster PC\Downloads\LakLaka\resources\src\app.js:278:22)
+[2024-02-23 20:53:24.811] [info]  Test
+[2024-02-23 20:53:25.266] [info]  Server started on port:1337
+[2024-02-23 20:53:25.540] [info]  Client Connected to server
+[2024-02-23 20:53:31.993] [error] Error: 401 Incorrect API key provided: sk-qspMp***************************************HvhB. You can find your API key at https://platform.openai.com/account/api-keys.
+    at APIError.generate (C:\Users\Geekster PC\Downloads\LakLaka\resources\node_modules\openai\error.js:47:20)
+    at OpenAI.makeStatusError (C:\Users\Geekster PC\Downloads\LakLaka\resources\node_modules\openai\core.js:262:33)
+    at OpenAI.makeRequest (C:\Users\Geekster PC\Downloads\LakLaka\resources\node_modules\openai\core.js:305:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Socket.<anonymous> (C:\Users\Geekster PC\Downloads\LakLaka\resources\src\app.js:278:22)
+[2024-03-27 15:21:14.120] [info]  Test
+[2024-03-27 15:21:14.685] [info]  Server started on port:1337
+[2024-03-27 15:21:15.284] [info]  Client Connected to server

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LakLaka</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="back-button">
+      <button id="back" style="display: none">&lt;</button>
+    </div>
+    <div id="home" style="display: flex">
+      <h1 class="title">ქართული AI ასისტენტი</h1>
+      <div class="card-container">
+        <div class="card1">
+          <h2>AI ასისტენტი</h2>
+          <p>
+            AI ხმოვანი ასისტენტი,რომელთანაც საუბარი შეგიძლიათ ნებისმიერ თემაზე!
+          </p>
+          <button id="chat-button">ისაუბრე ახლა!</button>
+        </div>
+
+        <div class="card2">
+          <h2>ტესტები</h2>
+          <p>
+            AI-ს მიერ შედგენილი ტესტები ნებისმიერ საგანზე. გამოსცადე შენი თავი!
+          </p>
+          <button id="test-button">დაიწყე ტესტი</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© SB9 - 2024</p>
+    </footer>
+    <div class="test" id="test-page" style="display: none">
+      <div class="test-subject" id="subject-select" style="display: none">
+        <div class="subject-h1">
+          <h1>ტესტები</h1>
+        </div>
+        <div class="subject-input">
+          <label for="subject">რომელ თემაზე გინდა გამოცდა?</label>
+          <input type="text" id="subject" placeholder="შეიყვანეთ თემა..." />
+          <label for="amount">რამდენი შეკითხვის შექმნა გსურთ?</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="შეიყვანეთ კითხვების რაოდენობა..."
+          />
+          <select id="difficulty" aria-placeholder="Select a difficulty...">
+            <option value="easy">მარტივი</option>
+            <option value="medium">საშუალო</option>
+            <option value="hard">რთული</option>
+          </select>
+        </div>
+        <button id="subject-submit">დაწყება</button>
+      </div>
+      <div class="test-container" id="test-container">
+        <div class="test-h1">
+          <h1>ტესტები</h1>
+        </div>
+        <div class="test-form">
+          <div class="left-container" id="left-container"></div>
+          <div class="right-container" id="right-container"></div>
+        </div>
+        <button id="correct-test">დასტური</button>
+      </div>
+      <div
+        class="test-loading-container"
+        id="test-loading"
+        style="display: none"
+      >
+        <div class="test-loading">
+          <div class="loading">
+            <div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <h3>იტვირთება...</h3>
+      </div>
+    </div>
+    <div class="chat" id="chat" style="display: none">
+      <aside class="sidebar">
+        <ul>
+          <li><a href="#">საუბრის ისტორია 1</a></li>
+          <li><a href="#">საუბრის ისტორია 2</a></li>
+        </ul>
+        <button class="new-chat-button">ახალი სასაუბრო</button>
+      </aside>
+
+      <div class="main">
+        <div id="chat-name" style="align-self: center">ახალი სასაუბრო</div>
+        <div class="chat-container">
+          <div class="camera"></div>
+          <div id="chat-window"></div>
+          <button class="btn-mic" id="start-btn">
+            <img src="images/mic.png" alt="Mic Icon" />
+          </button>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/socket.io.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/test.js"></script>
+  </body>
+</html>

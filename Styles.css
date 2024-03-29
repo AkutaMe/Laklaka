@@ -1,0 +1,317 @@
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Light mode */
+.light-mode body {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text color */
+}
+
+/* Dark mode */
+.dark-mode body {
+  background-color: #000000; /* Pitch black */
+  color: #ffffff; /* White text color */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000; /* Pitch black */
+  color: white; /* Text color */
+  height: 60px; /* Increased height */
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.logo {
+  height: 50px; /* Adjusted height */
+}
+
+.nav-options a,
+.navbar-right a,
+#theme-toggle,
+#login,
+#signup {
+  padding: 10px 20px; /* Added padding */
+  border-radius: 5px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  color: white; /* Text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  text-decoration: none; /* Remove default underline */
+  cursor: pointer;
+}
+
+.nav-options a:hover,
+.navbar-right a:hover,
+#theme-toggle:hover,
+#login:hover,
+#signup:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Semi-transparent white on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+/* Mode toggle */
+.mode-toggle {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.mode-toggle:hover {
+  color: rgba(255, 255, 255, 0.7); /* Semi-transparent white on hover */
+}
+
+/* About Us Section styles */
+.about-section {
+  position: relative;
+  text-align: center;
+  color: #ffffff; /* Light mode text color */
+  background-color: #ffffff; /* Matched background color */
+  height: calc(100vh - 80px); /* Adjusted height */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.about-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* Semi-transparent black overlay */
+}
+
+.background-video {
+  position: relative; /* Ensure relative positioning for absolute elements */
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-height: calc(100vh - 80px); /* Set maximum height to adjust video size */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.background-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+}
+
+.dark-mode .background-video::after {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Semi-transparent white overlay */
+}
+
+.background-video video {
+  width: 100%; /* Set video width to fill its container */
+  height: auto; /* Allow video height to adjust proportionally */
+}
+
+.about-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure content is above video */
+}
+
+.about-content h1 {
+  font-size: 3rem; /* Adjusted font size */
+  margin-bottom: 30px;
+  color: white;
+}
+
+.about-content p {
+  font-size: 1.2rem; /* Adjusted font size */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* About Us Section styles */
+
+.about-section {
+  padding: 80px 0; /* Adjusted padding */
+  color: #000000; /* Black text color */
+  text-align: center; /* Center align text */
+}
+
+/* Light mode */
+.light-mode .about-section {
+  background-color: #ffffff; /* White background */
+}
+
+/* Dark mode */
+.dark-mode .about-section {
+  background-color: #333333; /* Dark background */
+}
+
+/* Pricing Section styles */
+.pricing-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0; /* Increased padding */
+}
+
+/* Light mode */
+.light-mode .pricing-section {
+  background-color: #ffffff; /* White background */
+}
+
+/* Dark mode */
+.dark-mode .pricing-section {
+  background-color: #333333; /* Dark background */
+}
+
+/* Pricing Section styles */
+.pricing-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0; /* Increased padding */
+}
+
+.pricing-card {
+  text-align: left; /* Adjusted alignment */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Light mode background color */
+  border: 2px solid #000000; /* Border color */
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.pricing-card h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.pricing-card p {
+  font-size: 1.2rem; /* Adjusted font size */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  margin-left: 20px; /* Adjusted margin for bullet list */
+}
+
+.pricing-card li {
+  margin-bottom: 10px; /* Adjusted margin for list items */
+}
+
+.pricing-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem; /* Adjusted font size */
+}
+
+.pricing-card button:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #000000; /* Pitch black */
+  color: white; /* Text color */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Adjusted padding */
+    height: 50px; /* Reduced height */
+  }
+
+  .logo {
+    height: 40px; /* Reduced height */
+  }
+
+  .nav-options a,
+  .navbar-right a {
+    padding: 8px 15px; /* Adjusted padding */
+    margin-right: 15px; /* Adjusted margin */
+  }
+
+  .mode-toggle {
+    font-size: 1.2rem; /* Adjusted font size */
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem; /* Adjusted font size */
+    margin-bottom: 20px;
+  }
+
+  .about-content p {
+    font-size: 1rem; /* Adjusted font size */
+    margin-bottom: 15px;
+  }
+
+  .pricing-section {
+    flex-direction: column; /* Changed flex direction to column */
+    align-items: center; /* Centered items */
+    padding: 30px 0; /* Adjusted padding */
+  }
+
+  .pricing-card {
+    width: 80%; /* Adjusted width */
+  }
+}
